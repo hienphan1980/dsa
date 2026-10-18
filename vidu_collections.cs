@@ -33,7 +33,7 @@ class run_thunghiem_Collection
 
 public interface int_T
 {
-    public int val {get; set;}
+    int val {get; set;}
 }
 
 public class SV : int_T 
