@@ -35,15 +35,7 @@ public class danhsachlienket {
         }
     } 
     
-    public void xoa(int gt) {
-        phantu phantu_gt = tim(gt);
-        if (phantu_gt == null) return;
-        else {
-            phantu link = phantu_gt.phantu_ke;
-            phantu_gt.phantu_ke = pt;
-            pt.phantu_ke = link;
-        } 
-    }
+ 
     
     public phantu tim(int gt) {
         phantu pt_i = dau_danhsach;
