@@ -18,6 +18,19 @@ public class danhsachlienket {
         dau_danhsach = pt_dau;
     }
     
+    public void themcuoi(phantu pt) {
+        phantu_cuoi = dau_danhsach;
+        while (phantu_cuoi.phantu_ke != null)
+            phantu_cuoi = phantu_cuoi.phantu_ke;
+        phantu_cuoi.phantu_ke = pt;
+    }
+    
+    public void themsau(int gt, phantu pt) {
+        phantu = tim(gt);
+        if (phantu == null) 
+        else 
+    } 
+    
     public phantu tim(int gt) {
         phantu pt_i = dau_danhsach;
         while (pt_i != null) {
