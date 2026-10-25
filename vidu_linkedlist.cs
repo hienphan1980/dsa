@@ -35,6 +35,10 @@ public class danhsachlienket {
         }
     } 
     
+    public void xoa(int gt) {
+        
+    }
+    
     public phantu tim(int gt) {
         phantu pt_i = dau_danhsach;
         while (pt_i != null) {
