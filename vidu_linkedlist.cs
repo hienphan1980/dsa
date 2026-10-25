@@ -19,15 +19,15 @@ public class danhsachlienket {
     }
     
     public void them(phantu pt) {
-        phantu_cuoi = dau_danhsach;
+        phantu phantu_cuoi = dau_danhsach;
         while (phantu_cuoi.phantu_ke != null)
             phantu_cuoi = phantu_cuoi.phantu_ke;
         phantu_cuoi.phantu_ke = pt;
     }
     
     public void themsau(int gt, phantu pt) {
-        phantu_gt = tim(gt);
-        if (phantu_gt == null) them(pt)
+        phantu phantu_gt = tim(gt);
+        if (phantu_gt == null) them(pt);
         else {
             phantu link = phantu_gt.phantu_ke;
             phantu_gt.phantu_ke = pt;
@@ -36,7 +36,13 @@ public class danhsachlienket {
     } 
     
     public void xoa(int gt) {
-        
+        phantu phantu_gt = tim(gt);
+        if (phantu_gt == null) return;
+        else {
+            phantu link = phantu_gt.phantu_ke;
+            phantu_gt.phantu_ke = pt;
+            pt.phantu_ke = link;
+        } 
     }
     
     public phantu tim(int gt) {
