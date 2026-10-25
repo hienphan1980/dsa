@@ -26,9 +26,13 @@ public class danhsachlienket {
     }
     
     public void themsau(int gt, phantu pt) {
-        phantu = tim(gt);
-        if (phantu == null) 
-        else 
+        phantu_gt = tim(gt);
+        if (phantu_gt == null) themcuoi(pt)
+        else {
+            phantu link = phantu_gt.phantu_ke;
+            phantu_gt.phantu_ke = pt;
+            pt.phantu_ke = link;
+        }
     } 
     
     public phantu tim(int gt) {
