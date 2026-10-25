@@ -18,7 +18,7 @@ public class danhsachlienket {
         dau_danhsach = pt_dau;
     }
     
-    public void themcuoi(phantu pt) {
+    public void them(phantu pt) {
         phantu_cuoi = dau_danhsach;
         while (phantu_cuoi.phantu_ke != null)
             phantu_cuoi = phantu_cuoi.phantu_ke;
@@ -27,7 +27,7 @@ public class danhsachlienket {
     
     public void themsau(int gt, phantu pt) {
         phantu_gt = tim(gt);
-        if (phantu_gt == null) themcuoi(pt)
+        if (phantu_gt == null) them(pt)
         else {
             phantu link = phantu_gt.phantu_ke;
             phantu_gt.phantu_ke = pt;
