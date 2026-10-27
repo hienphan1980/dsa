@@ -16,7 +16,7 @@ public class Vidu_SortedList{
         foreach (var pt in sl){
             Console.WriteLine("K: {0}; V: {1}",pt.Key, pt.Value);
         }
-        Console.WriteLine("==============================")
+        Console.WriteLine("==============================");
         
         
         bool b = sl.Contains('WE');
