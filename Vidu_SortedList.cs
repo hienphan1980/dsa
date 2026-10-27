@@ -18,8 +18,7 @@ public class Vidu_SortedList{
         }
         Console.WriteLine("==============================");
         
-        
-        bool b = sl.Contains("WE",12);
+        bool b ;
         b = sl.ContainsKey("HH");
         b = sl.ContainsValue(24);
         
