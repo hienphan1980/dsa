@@ -9,6 +9,10 @@ public class Vidu_SortedList{
         sl.add('WE', 12);
         sl.add('HH', 45);
         sl.add('BA',30);
+        
+        foreach (pt in sl){
+            Console.WriteLine("K: {0}; V: {1}",pt.Key, pt.Value);
+        }
     }
 }
 
