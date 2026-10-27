@@ -19,11 +19,11 @@ public class Vidu_SortedList{
         Console.WriteLine("==============================");
         
         
-        bool b = sl.Contains('WE');
-        b = sl.ContainsKey('HH');
+        bool b = sl.Contains("WE");
+        b = sl.ContainsKey("HH");
         b = sl.ContainsValue(24);
         
-        sl.Remove('WE');
+        sl.Remove("WE");
         sl.RemoveAt(1);
         
         
